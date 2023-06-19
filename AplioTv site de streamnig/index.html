@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="fr"> 
+    <link rel="icon" href=
+    "https://cdn-icons-png.flaticon.com/512/633/633832.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css" >
+	<head> 
+
+		<meta charset="utf-8">
+		<title>AplioTv</title>
+	</head> 
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        body{
+            font-family: 'Poppins', sans-serif;
+            background-color: black;
+            
+        }
+        .btn{
+            position: absolute;
+            top: 65%;
+            left: 3%;
+            background-color: rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .btn2{
+            position: absolute;
+            top: 1px;
+            left: 87%;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            font-size: 12px;
+            padding: 16px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .BigText{
+            position: absolute;
+            top: 30%;
+            left: 3%;
+            width: 30%;
+            font-size: 300%;
+            color: rgb(0, 0, 0);
+        }
+        
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: #7d0c0c;
+            border-radius: 10px;
+        }
+            .arcaneimg{
+            width: 1330px;
+            height: 750px;
+        }
+        .moviesection{
+            max-width: 1200px;
+            text-transform: uppercase;
+            padding-left: 0%;
+            color: rgb(255, 255, 255);
+            background: black;
+        }
+        hr.rounded{
+            border-top: 3px solid rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+        .movieimg .myimages{
+            height: 500px;
+            width: 280px;
+        }
+        .movieimg .myimages img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            flex-wrap: wrap;
+            transition: .4s ease;
+        }
+        .movieimg{
+            float: left;
+            width: 30%;
+            padding: 15px;
+            max-width: max-content;
+            padding-left: 5px;
+            background: black;
+        }
+        
+        .moviecontainer::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .moviecontainer{
+            height: max-content;
+            width: max-content;
+        }
+        
+
+        .image {
+            width: 750px;
+            height: 350px;
+            padding: 250px;
+            
+        }
+        .ma {
+            color: #7d0c0c;
+            
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        .btn3 {
+            position: absolute;
+            top: 1460px;
+            left: 45%;
+            background-color: rgb(0, 0, 0);
+            color: rgb(0, 0, 0);
+            height: 5px;
+            width: 633px;
+            border: none;
+            cursor: pointer;
+            border-radius: 16px 16px;
+            text-align: center;
+            
+        }
+        .survol {
+            width: 1050px;
+            height: ç00px;
+            position: relative;
+            background: black;
+            overflow: hidden;
+            border-radius: 15px;
+            left: 10%;
+            top: 40px;
+        }
+        .survol img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transform: scale(1.3);
+            transition: .4s ease;
+        }
+        .survol:hover img {
+            opacity: 0.5;
+            transform: scale(1);
+        }
+        .Big {
+            position:absolute;
+            top: 100px;
+            left: 100px;
+            width: 30%;
+            font-size: 300%;
+            color: rgb(0, 0, 0);
+            background: rgb(0, 0, 0);
+            font-family: 'Poppins', sans-serif;
+            border-radius: 15px;
+        }
+        .contenair1 {
+            position: absolute;
+        }
+        .survol1 {
+            height: 500px;
+            width: 280px;
+            position: relative;
+            background: black;
+            overflow: hidden;
+            border-radius: 15px;
+            left: 2%;
+            top:100px;
+        }
+        .survol1 img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transform: scale(1.3);
+            transition: .4s ease;
+        }
+        .survol1:hover img {
+            opacity: 0.5;
+            transform: scale(1);
+        }
+        
+        .survol2 {
+            height: 500px;
+            width: 280px;
+            position: relative;
+            background: black;
+            overflow: hidden;
+            border-radius: 15px;
+            left: 4%;
+            top:100px;
+
+        }
+        .survol2 img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transform: scale(1.3);
+            transition: .4s ease;
+        }
+        .survol2:hover img {
+            opacity: 0.5;
+            transform: scale(1);
+        }
+
+        .survol3 {
+            height: 500px;
+            width: 280px;
+            position: relative;
+            background: black;
+            overflow: hidden;
+            border-radius: 15px;
+            left: 6%;
+            top:100px;
+
+        }
+        .survol3 img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transform: scale(1.3);
+            transition: .4s ease;
+        }
+        .survol3:hover img {
+            opacity: 0.5;
+            transform: scale(1);
+        }
+
+        .survol4 {
+            height: 500px;
+            width: 280px;
+            position: relative;
+            background: black;
+            overflow: hidden;
+            border-radius: 15px;
+            left: 8%;
+            top:100px;
+
+        }
+        .survol4 img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transform: scale(1.3);
+            transition: .4s ease;
+        }
+        .survol4:hover img {
+            opacity: 0.5;
+            transform: scale(1);
+        }
+        
+        .survoler {
+            display: flex;
+            padding: 30px;
+        }
+        .Film {
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            position: relative;
+            left: 470px;
+            top: 104px;
+            font-size: 26px;
+        }
+        .Trait {
+            position: relative;
+            background: white;
+            border-radius: 16px;
+            width: 400px;
+            height: 5px;
+            left: 430px;
+            top: 110px;
+        }
+        .Trait1 {
+            position: relative;
+            background: white;
+            border-radius: 16px;
+            width: 800px;
+            height: 5px;
+            left: 234px;
+            top: 100px;
+        }
+        .survol6 {
+            height: 400px;
+            width: 1100px;
+            position: relative;
+            background: black;
+            overflow: hidden;
+            border-radius: 16px;
+            left: 7%;
+            top:150px;
+
+        }
+        .survol6 img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transform: scale(1.3);
+            transition: .4s ease;
+        }
+        .survol6:hover img {
+            opacity: 0.5;
+            transform: scale(1);
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            position: relative;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 12px 10px;
+            text-decoration: none;
+            left: 47px;
+        }
+        li a:hover{
+            background-color: #7d0c0c;
+            border-radius: 10px;
+        }
+        
+        
+        .trait2 {
+            position: relative;
+            background: #000000;
+            width: 1200px;
+            height: 3px;
+            top: 180px;
+            left: 54px;
+        }
+        .trait3 {
+            position: relative;
+            background: #ffffff; 
+            width: 1200px;
+            height: 5px;
+            border-radius: 16px;
+            left: 39px;
+            top: 200px;
+        }
+        .trait4 {
+            position: relative;
+            background: #ffffff; 
+            width: 1200px;
+            height: 5px;
+            border-radius: 16px;
+            left: 39px;
+            top: 200px;
+        }
+      
+        .Trait000 {
+            position: relative;
+        }
+        
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto&display=swap');
+        .btn4 {
+            font-family: 'Nunito', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+        }
+        .catalogue {
+            height: 500px;
+            width: 640px;
+            position: relative;
+            background: black;
+            overflow: hidden;
+            border-radius: 15px;
+            left: 35px;
+            top:230px;
+
+        }
+        .catalogue img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            transform: scale(1.3);
+            transition: .4s ease;
+        }
+        .catalogue:hover img {
+            opacity: 0.5;
+            transform: scale(1);
+        }
+        .haut {
+            position: relative;
+            background: #ffffff;
+            width: 5px;
+            height: 450px;
+            border-radius: 16px;
+            left: 52%;
+            bottom: 250px;
+        }
+        p {
+            font-family: 'Nunito', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+            position: relative;
+            left: 700px;
+            font-size: 20px;
+            bottom: 690px;
+        } 
+        
+            .la {
+            position: relative;
+			color: #ffffff;
+			font-size: 20px;
+			border: 6px solid #ffffff;
+			border-radius: 16px;
+			padding: 15px 50px;
+			letter-spacing: 2px;
+			cursor: pointer;
+            width: 188px;
+            height: 70px;
+            bottom: 660px;
+            left: 700px;
+            
+		}
+		.la:hover {
+			color: #000000;
+			background-color: #ffffff;
+		}
+    </style>
+
+	<body> 
+        <div class="container">
+            <a href="https://www.youtube.com/watch?v=4Ps6nV4wiCE&t=48s"><button class="btn"></button></a>
+            <h1 class="BigText"></h1>
+            <button class="btn2">Sign In </button>
+
+           
+            
+
+              
+
+            <ul>
+                <li><a class="active" href="#Home">Home</a></li>
+                <li><a  href="#Movies">Movies</a></li>
+                <li><a  href="#Coming">Coming</a></li>
+                <li><a  href="#About">About</a></li>
+            
+            </ul>
+
+                         
+
+                    </div>
+
+                    <div class="survol">
+                        <img src="Babylon-Banner.png">
+                    </div>
+
+                <h3 class="Film">Film Populair 2022-2023</h3>
+                <h6 class="Trait"></h6>
+
+    </div>
+<div class="survoler">
+    <div class="survol1">
+        <img src="creed3.jpg">
+    </div>      
+    
+         <div class="survol2">
+                 <img src="fin.jpg">
+         </div> 
+
+         <div class="survol3">
+            <img src="bad boys.jpg">
+    </div>
+
+    <div class="survol4">
+        <img src="ekukfA8P8D5gIvRzoZ2KkjOAjrB (1).jpg">
+</div>
+
+<div class="survol5">
+    <img src="">
+</div>
+
+</div>
+
+<h6 class="Trait1"></h6>
+
+<div  class="survol6">
+    <img src="1.jpg">
+</div>
+
+<div class="trait2">
+    <h4></h4>
+</div>
+<h2 class="home"></h2>
+
+<h4 class="trait4"></h4>
+    <div class="catalogue">
+            <img src="fin.jpg">
+    </div>
+    <h4 class="haut"></h4>
+    <p>Vous voulez regarder plus de 600+ film et série<br> en streaming et sans pub alors prenez un des tarifs<br> contents pub ou sans 5,99€ tarif avec pub,<br> ou le tarif 10,99 €
+        sans pub. Vous pouvez sinon bénéficier<br> d'un compte non payant mais regarder un 
+        <br> Maisquin catalogue de plus de 20+film catalogue avec un<br> tarif gratuit.AplioTv contient aussi un parti de page,<br> Populaire film... Ou l'on peut retrouver les sélections<br> des commentaires et apréciassion des utilisateurs.<br> Pour le catalogue gratuit les film "Populaire sélectif" <br>ne seront que prenium.Notre catalogue est riche en<br> tout t'humeur,content je vous conseille le nouveau<br> spider man new génération qui est prenium.<br> AplioTv est un site sécuriser et qui ouvrira<br> bientôt ses portes à une application de streaming!<br> Bon on se regarde un film ou quoi?Ok oui aller!!<br> Aller clique sur le bouton en bas-là!!</p>
+        <a><h2 class="la">Là ici!</h2></a>
+	</body> 
+</html>
