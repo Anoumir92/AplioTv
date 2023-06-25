@@ -2,7 +2,9 @@
 <html lang="fr"> 
     <link rel="icon" href=
     "https://cdn-icons-png.flaticon.com/512/633/633832.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css" type="text/css" >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width"/>
+    
 	<head> 
 
 		<meta charset="utf-8">
@@ -16,6 +18,9 @@
             background-color: black;
             
         }
+
+        @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Nunito:wght@300&family=Roboto&display=swap');
+       
         .btn{
             position: absolute;
             top: 65%;
@@ -31,8 +36,8 @@
         }
         .btn2{
             position: absolute;
-            top: 1px;
-            left: 87%;
+            top: 17px;
+            left: 1097px;
             background-color: rgb(255, 255, 255);
             color: rgb(0, 0, 0);
             font-size: 12px;
@@ -54,18 +59,19 @@
         
         ul{
             list-style-type: none;
-            margin: 0;
-            padding: 0;
             overflow: hidden;
+            position: relative;
+            left: 80px;
+            top: 7px;
         }
         li{
-            float: left;
+            
         }
         li a{
             display: block;
             color: rgb(0, 0, 0);
             text-align: center;
-            padding: 14px 16px;
+
             text-decoration: none;
         }
         li a:hover{
@@ -284,6 +290,14 @@
             top: 104px;
             font-size: 26px;
         }
+        .Film1 {
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            position: relative;
+            left: 470px;
+            top: 104px;
+            font-size: 26px;
+        }
         .Trait {
             position: relative;
             background: white;
@@ -325,7 +339,7 @@
             transform: scale(1);
         }
         ul{
-            list-style-type: none;
+            
             margin: 0;
             padding: 0;
             overflow: hidden;
@@ -413,7 +427,7 @@
             width: 5px;
             height: 450px;
             border-radius: 16px;
-            left: 52%;
+            left: 47%;
             bottom: 250px;
         }
         p {
@@ -435,24 +449,55 @@
 			padding: 15px 50px;
 			letter-spacing: 2px;
 			cursor: pointer;
-            width: 188px;
+            width: 80px;
             height: 70px;
-            bottom: 660px;
+            bottom: 795 px;
             left: 700px;
             
 		}
 		.la:hover {
 			color: #000000;
 			background-color: #ffffff;
+            font-size: 30px;
+            text-align: center;
 		}
+
+        @media all and (max-width: 500px) {
+        .header {
+            text-align: left;
+        }
+        .btn2 {
+            left: 1130px;
+            width: 100px;
+        }
+        .survol {
+            width: 1200px;
+            left: 24px;
+        }
+        ul {
+            left: 10px;
+        }
+        .Film {
+            left: 502px;
+        }
+        .survoler {
+            padding-left: 73px;
+            width: 1000px;
+            
+        }
+
+        }
+        
+  
+
     </style>
 
 	<body> 
+        <header>
         <div class="container">
             <a href="https://www.youtube.com/watch?v=4Ps6nV4wiCE&t=48s"><button class="btn"></button></a>
             <h1 class="BigText"></h1>
             <button class="btn2">Sign In </button>
-
            
             
 
@@ -468,13 +513,14 @@
 
                          
 
-                    </div>
+            
 
                     <div class="survol">
                         <img src="Babylon-Banner.png">
                     </div>
+                </header>
 
-                <h3 class="Film">Film Populair 2022-2023</h3>
+                <h3 class="Film">Populair 2022-2023</h3>
                 <h6 class="Trait"></h6>
 
     </div>
@@ -519,7 +565,8 @@
     <h4 class="haut"></h4>
     <p>Vous voulez regarder plus de 600+ film et série<br> en streaming et sans pub alors prenez un des tarifs<br> contents pub ou sans 5,99€ tarif avec pub,<br> ou le tarif 10,99 €
         sans pub. Vous pouvez sinon bénéficier<br> d'un compte non payant mais regarder un 
-        <br> Maisquin catalogue de plus de 20+film catalogue avec un<br> tarif gratuit.AplioTv contient aussi un parti de page,<br> Populaire film... Ou l'on peut retrouver les sélections<br> des commentaires et apréciassion des utilisateurs.<br> Pour le catalogue gratuit les film "Populaire sélectif" <br>ne seront que prenium.Notre catalogue est riche en<br> tout t'humeur,content je vous conseille le nouveau<br> spider man new génération qui est prenium.<br> AplioTv est un site sécuriser et qui ouvrira<br> bientôt ses portes à une application de streaming!<br> Bon on se regarde un film ou quoi?Ok oui aller!!<br> Aller clique sur le bouton en bas-là!!</p>
-        <a><h2 class="la">Là ici!</h2></a>
-	</body> 
+        <br> Maisquin catalogue de plus de 20+film catalogue avec un<br> tarif gratuit.AplioTv contient aussi un parti de page,<br> Populaire film... Ou l'on peut retrouver les sélections<br> des commentaires et apréciassion des utilisateurs.<br> Pour le catalogue gratuit les film "Populaire sélectif" <br>ne seront que prenium.Notre catalogue est riche en<br> tout t'humeur,content je vous conseille le nouveau<br> spider man new génération qui est prenium.<br> AplioTv est un site sécuriser et qui ouvrira<br> bientôt ses portes à une application de streaming!<br> Bon on se regarde un film ou quoi?Ok oui aller!!<br> Aller <a href="index 2.html">clique!</a></p>
+	
+
+    </body>
 </html>
